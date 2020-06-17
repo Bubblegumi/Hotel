@@ -24,7 +24,8 @@ body
     background-color: $accent
     &-cta
         width: 295px
-
+    &-book
+        width: 120px
 .offer
     background-color: $accent
     border-radius: 3px
@@ -33,9 +34,16 @@ body
     display: flex
     align-items: center   
     justify-content: center 
+    color: white
+    
+    &-xl
+        width: 95px
+        height: 30px
 p 
     +rfs(14)
     font-weight: normal
+.w
+    color: white
 h2
     +rfs(24)
     font-weight: bold
@@ -47,7 +55,11 @@ h2
 a   
     color: white
     text-decoration: none
-
+h5 
+    +rfs(18)
+    font-weight: bold
+    color: white
+    line-height: 23px
 h6 
     +rfs(10)
 .bold
@@ -189,7 +201,7 @@ form
     p   
         color: white
 
-.icon-guest
+.icon-wrap
     margin-right: 10px
 
 .info
@@ -275,12 +287,105 @@ form
     &__element
         padding-bottom: 22px
 
-.border::after
-    display: inline
-    margin-top: 15px
-    content: ""
-    border-bottom: 2px solid red
+.border-wrap
+    position: relative
+    padding-bottom: 30px
+.border-wrap::after
+    content: ''
     width: 90%
-    text-align: center
-// .bg
-//     background-color: white
+    height: 1px
+    position: absolute
+    background-color: #E0E0E0
+    bottom: 0
+    left: 5%
+    margin-top: 30px
+    margin-bottom: 30px
+
+// other-pack
+
+.other-pack
+    background-color: white
+    padding-top: 60px
+    padding-bottom: 40px
+    
+    & .pack-title
+        padding-bottom: 60px
+
+.book
+    max-hight: 500px 
+    &-card-img
+        background: url('../img/bg-card.png') left top / cover
+        width: 100%
+        height: auto
+        padding-top: 25px
+       
+        
+.book__wrapper
+    background: $dark
+    width: 100%
+    border-radius: 0px 8px 8px 0px
+    padding: 46px 21px 30px 44px
+    
+    & .book-paraghraph
+        color: white
+        line-height: 160.6%
+        padding-top: 27px
+        padding-bottom: 34px
+
+.book-info
+    padding-bottom: 35px
+    & .book-icons
+        padding-bottom: 10px
+        &:last-child
+            padding-bottom: 0px
+    & p 
+        color: white
+
+.price
+    color: white
+    text-decoration-line: line-through
+
+.book-element
+    background: $dark
+    border-radius: 0px 0px 8px 8px
+    padding: 30px 21px 25px 32px
+    & h5 
+        padding-bottom: 15px
+
+.element 
+    padding-bottom: 24px
+
+.cards-wrap
+    padding-top: 30px
+
+// img-card
+
+.img-card__first
+    background: url('../img/bg-s.png') center /cover 
+    height: 250px
+    padding-top: 25px
+
+.img-card__second
+    background: url('../img/bg-s-s.png') center /cover 
+    height: 250px
+    padding-top: 25px
+
+.img-card__third
+    background: url('../img/bg-ss.png') center /cover 
+    height: 250px
+    padding-top: 25px
+
+.img-card__fourth
+    background: url('../img/bg-s-s.png') center /cover 
+    height: 250px
+    padding-top: 25px
+
+// img-card
+
+// comments
+
+.comments
+    padding-top: 30px
+
+    & .header-wrap
+        padding-bottom: 70px
