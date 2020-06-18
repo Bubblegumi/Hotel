@@ -385,7 +385,54 @@ form
 // comments
 
 .comments
-    padding-top: 30px
+    padding-top: 50px
+    overflow-x: hidden
 
     & .header-wrap
-        padding-bottom: 70px
+        padding-bottom: 115px
+
+.comment-block
+    width: 731px
+    background-color: #fff 
+    padding: 55px 95px 30px 95px
+    position: relative
+    quotes: "\201C""\201D""\2018""\2019"
+    
+    &::before
+        position: absolute
+        color: rgba(0, 0, 0, 0.1)
+        content: open-quote
+        font-size: 250px
+        left: 10px
+        bottom: 100px
+    
+    &::after
+        position: absolute
+        color: rgba(0, 0, 0, 0.1)
+        content: close-quote
+        font-size: 250px
+        top: 25%
+        right: 6%
+        
+    &-text
+        color: $accent
+    &-date
+        padding-top: 10px
+        padding-bottom: 5px
+        color: $text
+    
+    &-info
+        max-width: 537px
+        padding-top: 30px
+        text-align: justify
+        line-height: 160%
+        width: 100%
+
+.profile-img
+    position: absolute
+    background: url('../img/profile-com.png') center / cover
+    width: 90px
+    height: 90px
+    left: 50%
+    margin-left: -50px
+    top: -50px
