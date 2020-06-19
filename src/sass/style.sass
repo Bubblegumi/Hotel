@@ -26,6 +26,8 @@ body
         width: 295px
     &-book
         width: 120px
+        text-transform: none
+        +rfs(14)
 .offer
     background-color: $accent
     border-radius: 3px
@@ -42,8 +44,6 @@ body
 p 
     +rfs(14)
     font-weight: normal
-.w
-    color: white
 h2
     +rfs(24)
     font-weight: bold
@@ -65,7 +65,10 @@ h6
 .bold
     font-weight: bold
 
-
+.h7
+    +rfs(36)
+    text-transform: uppercase
+    color: white
     
 
 .help-nav
@@ -115,7 +118,7 @@ form
     height: 40px
     border: none
     background: $accent
-    border-radius: 0px 5px 5px 0px
+    border-radius: 0px 2px 2px 0px
 
 .select
     padding-left: 30px   
@@ -239,7 +242,8 @@ form
             transition: width .3s ease
         &:hover::after
             width: 100%
-
+.w
+    color: white
 // spackege screen
 
 .package
@@ -386,10 +390,10 @@ form
 
 .comments
     padding-top: 50px
-    overflow-x: hidden
-
+    padding-bottom: 70px
     & .header-wrap
         padding-bottom: 115px
+
 
 .comment-block
     width: 731px
@@ -436,3 +440,103 @@ form
     left: 50%
     margin-left: -50px
     top: -50px
+
+// subscribe sec
+
+.subscribe
+    background: url('../img/bg-other-s.png')
+    padding-top: 105px
+    padding-bottom: 97px
+
+    & h2 
+        color: white
+        font-weight: normal
+        text-transform: none
+
+// activities
+.activities
+    padding-top: 60px
+    padding-bottom: 80px
+.title-wrap 
+    margin-bottom: 60px
+
+.card-bg
+    background: url('../img/bg.png') center / cover
+    max-width: 255px
+    height: 255px
+    padding: 140px 84px 24px 26px
+
+.card-bg_third
+    background: url('../img/bg-activ.png') center / cover
+    max-width: 255px
+    height: 255px
+    padding: 140px 84px 24px 26px
+
+.wrap-title
+    padding-bottom: 25px
+    & p 
+        color: white
+        font-weight: bold
+        font-size: 16px
+
+// footer
+
+.footer
+    padding-top: 100px
+    background: $dark
+
+    &-title
+        padding-bottom: 20px
+    
+    &-text 
+        font-size: 14px
+        line-height: 160%
+        color: #BDBDBD
+        display: block
+
+.sm-wrap 
+    padding-top: 20px
+    
+    & .icons-wrap
+        padding-left: 20px
+
+
+// form 
+
+.contact 
+    padding-top: 90px
+
+    &-text
+        color: white
+        padding-top: 20px
+    &-desc
+        color: white
+        padding-top: 32px
+    
+.form
+    padding-top: 30px
+    width: 100%
+    &__item
+        width: 100%
+        height: 50px
+        border-radius: 4px
+        outline: none
+        border: none
+        padding: 18px 0px 18px 23px
+        +rfs(15)
+        margin-bottom: 10px
+
+        &-text 
+            height: 123px
+            padding: 18px 0px 18px 23px
+    & .required 
+        p 
+            color: white
+
+.footer-end
+    padding-top: 90px
+
+    h6 
+        color: white
+        text-align: center
+        padding-right: 120px
