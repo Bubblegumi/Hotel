@@ -22,6 +22,7 @@ body
     height: 40px
     color: white
     background-color: $accent
+
     &-cta
         width: 295px
     &-book
@@ -94,6 +95,22 @@ h6
     padding-top: 40px
     padding-bottom: 40px
     background: white
+// .backet
+//     position: relative
+//     display: block
+
+// .backet-item
+//     width: 20px
+//     height: 20px
+//     position: absolute
+//     background: $accent
+//     left: 270px
+//     border-radius: 50%
+//     top: 5px
+//     & p
+//         color: white 
+//         +rfs(11px)
+    
 
 form 
     position: relative
@@ -135,11 +152,6 @@ form
     padding-top: 31px
     padding-bottom: 31px
 .menu
-    
-    &__item
-        margin-right: 84px
-        &:last-child
-            margin-right: 0px
     
     a   
         color: white
@@ -216,6 +228,7 @@ form
 
 .m-btn
     margin-top: 15px
+
 
 // second screen
 
@@ -353,11 +366,9 @@ form
     background: $dark
     border-radius: 0px 0px 8px 8px
     padding: 30px 21px 25px 32px
+    height: 250px
     & h5 
         padding-bottom: 15px
-
-.element 
-    padding-bottom: 24px
 
 .cards-wrap
     padding-top: 30px
@@ -540,3 +551,18 @@ form
         color: white
         text-align: center
         padding-right: 120px
+
+// adapt
+
+@media screen and (max-width: 768px)
+    body
+
+@media screen and (max-width: 992px)
+    .menu__item
+        font-size: 11px
+    
+    .nav__item
+        font-size: 11px
+
+@media screen and (max-width: 1200px)
+    body
